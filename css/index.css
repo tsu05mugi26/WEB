@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-size: 16px;
+  color: black;
+  line-height: 1;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ここからヘッダー */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #c4ddcd8f;
+  height: 60px;
+  z-index: 100;
+  box-shadow: 0 1px 6px #0322038c;
+}
+.header-inner {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-site-menu {
+  display: none;
+}
+
+.header-site-menu ul {
+  margin-top: 300px;
+}
+
+.header-site-menu ul li {
+  margin-top: 20px;
+}
+
+.header-logo {
+  display: block;
+  width: 150px;
+}
+
+.menu-button {
+  width: 80px;
+  height: 70px;
+  background-image: url(../img/header-menu-removebg-preview.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+/* ここまでヘッダー */
+
+/* ここからメイン */
+
+/* トップページから導入 */
+.first-view {
+  height: 100vh;
+  background-image: url(../img/toppage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 10px #022e02;
+}
+
+.first-view-text h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.first-view-text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+.lead {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/sizuku-midori.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.lead-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lead p {
+  line-height: 5;
+  font-size: 18px;
+}
+
+.lead p:first-child {
+  padding-top: 80px;
+}
+
+.second-view {
+  height: 100vh;
+  background-image: url(../img/background1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-view-text {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 100;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #022e02;
+}
+/* トップページから導入終了 */
+
+/* 私たちの想い */
+.thought {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/watasitati-no-omoi-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thought-text {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thought-text h1 {
+  position: absolute;
+  top: 100px;
+  font-weight: 300;
+}
+.thought-text p {
+  line-height: 4;
+}
+
+
+/* 私たちの想い終了 */
+
+/* ここまでメイン */
+
+/* ここからフッター */
+.footer {
+  position: relative;
+  height: 200px;
+  color: #fff;
+  background-color: #95e775;
+  padding-top: 10px;
+}
+
+.footer-logo {
+  display: block;
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo img {
+  width: 100%;
+}
+
+.footer .site-menu {
+  position: absolute;
+  top: 20px;
+  right: 400px;
+}
+.footer .site-menu ul li {
+  margin-top: 20px;
+}
+
+.copyright {
+  position: absolute;
+  font-size: 18px;
+  bottom: 10px;
+  right: 20px;
+}
+/* ここまでフッター */
